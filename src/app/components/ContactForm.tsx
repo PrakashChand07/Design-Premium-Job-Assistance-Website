@@ -253,35 +253,6 @@ export function ContactForm() {
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-semibold text-[#1E3A8A] mb-2">
-                  Upload Your Resume (Optional)
-                </label>
-                <div className="relative">
-                  <input
-                    type="file"
-                    id="resume-upload"
-                    accept=".pdf,.doc,.docx"
-                    onChange={handleFileChange}
-                    className="hidden"
-                  />
-                  <label
-                    htmlFor="resume-upload"
-                    className="flex items-center justify-center gap-3 w-full px-4 py-4 rounded-xl border-2 border-dashed border-blue-200 hover:border-[#3B82F6] bg-blue-50/50 hover:bg-blue-50 cursor-pointer transition-all"
-                  >
-                    <Upload className="w-6 h-6 text-[#3B82F6]" />
-                    <span className="text-gray-700">
-                      {resume ? resume.name : "Click to upload resume (PDF, DOC, DOCX)"}
-                    </span>
-                  </label>
-                </div>
-                {resume && (
-                  <p className="text-sm text-green-600 mt-2">
-                    ✓ {resume.name} selected
-                  </p>
-                )}
-              </div>
-
               {/* Error Message */}
               {errorMsg && (
                 <motion.div

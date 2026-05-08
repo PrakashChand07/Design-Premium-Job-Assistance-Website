@@ -27,7 +27,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           <div className="lg:col-span-2">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 inline-block mb-4">
+            <div className=" backdrop-blur-sm rounded-2xl p-4 inline-block mb-4 bg-white">
               <img src="/logo.png" alt="Job Appliers" className="h-12 md:h-14 w-auto" />
             </div>
             <p className="text-blue-200 leading-relaxed mb-6">
